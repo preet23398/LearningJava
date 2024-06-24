@@ -1,0 +1,15 @@
+//Instead of using command line arguments, we can simply take a standard input using scanner
+//Here is an example to demonstrate the same
+
+import java.util.Scanner; //must import
+
+public class Test {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); //create a scanner named sc
+        System.out.print("Enter a word: ");
+        String word = sc.next(); //takes the input
+        System.out.print(word);
+
+        sc.close();
+    }
+}
