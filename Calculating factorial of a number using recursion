@@ -1,0 +1,28 @@
+public class Recursion {
+    public static void main(String[] args) {
+        //Taking command line argument as input
+        String a = args[0];
+
+        //Converting the string into int
+        int val = Integer.parseInt(a);
+
+        //Calling the factt function
+        int fact = factt(val);
+
+        //Output
+        System.out.println("The factorial is: " + fact);
+    }
+
+    //Function to calculate tha factorial of a given number
+    private static int factt(int i) {
+        int result=1;
+        if (i != 0) {
+            for (int j=1; j<=i; j++) {
+                result = result*j;
+            }
+        } else {
+            result = 0;
+        }
+        return result;
+    }
+}
