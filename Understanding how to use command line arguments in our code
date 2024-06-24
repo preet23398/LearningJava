@@ -1,3 +1,20 @@
+//Sometimes, the situation may demand us to use command line arguments as our input.
+//Command line arguments are the ones we pass through our command prompt (in Windows), through terminal or through console.
+
+//Here is an example that aims at sorting out the confusion for beginners.
+
+//Before we pass the arguments, we must ensure that our program has no compilation error and is running.
+
+//Steps:
+//Open cmd and type the following:
+//javac Testingg.java 
+//Hit enter
+//java Testingg arg1 arg2
+//Hit enter
+
+//Note that where I have written Testingg, you must write the file name you created.
+//This is how we pass command line arguments to our program.
+
 public class Testingg {
     public static void main(String[] args) {
         //Input is taken as an array of string elements which are space separated
