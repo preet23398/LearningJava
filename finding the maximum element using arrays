@@ -1,0 +1,24 @@
+public class FindMax {
+    public static void main(String[] args) {
+        
+        //Initializing an array arr for the arguments
+        int[] arr = new int[args.length];
+
+        //Converting the elements from string type to int type
+        for (int i=0; i<args.length; i++) {
+            arr[i] = Integer.parseInt(args[i]);
+        }
+
+        //Finding the maximum
+        int max = arr[0];
+
+        for (int j=1; j<args.length; j++) {
+            if (arr[j]>max) {
+                max = arr[j];
+            }
+        }
+
+        //Output
+        System.out.println("The largest element in the array is: " + max);
+    }
+}
