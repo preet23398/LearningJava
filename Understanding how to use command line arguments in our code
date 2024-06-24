@@ -1,0 +1,27 @@
+public class Testingg {
+    public static void main(String[] args) {
+        //Input is taken as an array of string elements which are space separated
+
+        //Assigning these values
+        String a,b;
+        a = args[0];
+        b = args[1];
+
+        //Converting these string elements into int
+        int c,d;
+        c = Integer.parseInt(a);
+        d = Integer.parseInt(b);
+
+        //Calculating their sum
+        int sum = sum(c,d);
+
+        //Printing out the sum
+        System.out.println("The sum is: " + (sum));
+    }
+
+    //Function to caluclate the sum
+    private static int sum(int i, int j) {
+        int result = i+j;
+        return result;
+    }
+}
