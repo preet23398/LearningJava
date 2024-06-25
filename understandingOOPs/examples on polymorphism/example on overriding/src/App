@@ -1,0 +1,12 @@
+import myFiles.Animal;
+import myFiles.Dog;
+
+public class App {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        dog.makeSound(); //Method in Dog will override the one in Animal
+
+        Animal animal = new Animal();
+        animal.makeSound(); //No override here because the object is not created in the subclass
+    }
+}
