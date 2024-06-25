@@ -1,0 +1,17 @@
+package myFiles;
+
+public class Books {
+    String book;
+    String author;
+    int pages;
+
+    public Books(String book, String author, int pages) {
+        this.book = book;
+        this.author = author;
+        this.pages = pages;
+    }
+
+    public void display() {
+        System.out.println("The book's name is: " + book + ". It's author is: " + author + ". The number of pages are: " + pages + ". ");
+    }
+}
