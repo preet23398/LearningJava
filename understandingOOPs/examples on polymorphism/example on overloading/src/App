@@ -1,0 +1,10 @@
+import myFiles.Calculator;
+
+public class App {
+    public static void main(String[] args) {
+        Calculator one = new Calculator();
+
+        System.err.println(one.add(1,2));
+        System.out.println(one.add(1.1,2.2));
+    }
+}
