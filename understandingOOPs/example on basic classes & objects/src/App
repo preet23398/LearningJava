@@ -1,0 +1,12 @@
+import myFiles.Books;
+
+public class App {
+    public static void main(String[] args) {
+
+        Books first = new Books("Harry Potter", "JK Rowling", 128);
+        Books second = new Books("Percy Jackson", "Rick Riordan", 250);
+
+        first.display();
+        second.display();
+    }
+}
