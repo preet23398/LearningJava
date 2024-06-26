@@ -1,0 +1,13 @@
+import myFiles.Student;
+
+public class App {
+    public static void main(String[] args) {
+        
+        Student a = new Student("Preet", 19, 2023398, 3.5);
+
+        a.getID();
+        a.getGPA();
+        a.setGPA(3.7);
+        a.getGPA();
+    }
+}
