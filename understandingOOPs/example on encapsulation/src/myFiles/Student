@@ -1,0 +1,60 @@
+package myFiles;
+
+public class Student {
+
+    //private fields to demonstrate encapsulation (also refered to as data hiding)
+    private String name;
+    private int age;
+    private int studentID;
+    private double gpa;
+
+    public Student(String name, int age, int studentID, double gpa) {
+        this.name = name;
+        this.age = age;
+        this.studentID = studentID;
+        this.gpa = gpa;
+    }
+
+    //we use public functions to modify these private fields
+    //getter functions
+    public void getName() {
+        System.out.println(("Name: " + name));
+    }
+
+    public void getAge() {
+        System.out.println(("Age: " + age));
+    }
+
+    public void getID() {
+        System.out.println(("Student ID: " + studentID));
+    }
+
+    public void getGPA() {
+        System.out.println(("GPA: " + gpa));
+    }
+
+    //setter functions
+    public void setName(String newName) {
+        this.name = newName;
+    }
+
+    public void setAge(int newAge) {
+        if (newAge < 0 && newAge > 120) {
+            System.out.println("Enter a valid age");
+        } else {
+            this.age = newAge;
+        }
+    }
+
+    public void setID(int newID) {
+        this.studentID = newID;
+    }
+
+    public void setGPA(double newGPA) {
+        if (newGPA < 0.0 || newGPA > 4.0) {
+            System.out.println("Enter a valid gpa");
+        } else {
+            this.gpa = newGPA;
+        }
+    }
+}
