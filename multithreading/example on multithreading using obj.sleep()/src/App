@@ -1,0 +1,12 @@
+import myFiles.RunningEvenThreads;
+import myFiles.RunningOddThreads;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        
+        RunningEvenThreads obj1 = new RunningEvenThreads();
+        RunningOddThreads obj2 = new RunningOddThreads();
+        obj1.start();
+        obj2.start();
+    }
+}
